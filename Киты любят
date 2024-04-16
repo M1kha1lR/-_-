@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>Я люблю тебя на китовый язык</title>
+    <style>
+    body { font-family: 'Arial', sans-serif; }
+    nav ul { display: flex; justify-content: space-between; list-style-type: none; padding: 20px; background-color: #f3f4f6; margin: 0; }
+    nav ul li a { text-decoration: none; color: #333; }
+    main { padding: 20px; text-align: center; }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    section { padding: 20px; background-color: #ffffff; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    figure img { width: 100%; height: auto; }
+    footer { text-align: center; padding: 10px; background-color: #f1f1f1; }
+    footer a { color: #555; text-decoration: none; }
+    input, button { width: 100%; padding: 10px; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Китовый Перевод</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#" role="button">О проекте</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2>Перевод фразы "Я люблю тебя"</h2>
+                    <h3>на человеческий язык</h3>
+                </hgroup>
+                <p>На человеческом языке фраза звучит как "Я люблю тебя" и символизирует глубокие чувства и привязанность между людьми.</p>
+                <figure>
+                    <img src="https://files.oaiusercontent.com/file-NemBK7vdGsjEDkPTQa5ScHtR" alt="Человек шепчет 'Я люблю тебя'" />
+                    <figcaption>Изображение человека, шепчущего "Я люблю тебя".</figcaption>
+                </figure>
+                <h3>на китовый язык</h3>
+                <p>На "китовом" языке, это выражение может быть представлено как серия звуков или пузырей, символизирующих любовь.</p>
+                <figure>
+                    <img src="https://files.oaiusercontent.com/file-1rv4iaEwFU3qvbppJB7qolyX" alt="Кит издает звуки любви" />
+                    <figcaption>Кит, символизирующий фразу "Я люблю тебя" на китовом языке.</figcaption>
+                </figure>
+            </section>
+        </div>
+    </main>
+
+    <section aria-label="Subscribe example">
+        <div class="container">
+            <article>
+                <hgroup>
+                    <h2>Подписаться на новости</h2>
+                    <h3>Узнавайте первыми о новых переводах!</h3>
+                </hgroup>
+                <form class="grid" id="subscribe-form">
+                    <input type="text" id="firstname" name="firstname" placeholder="Ваше имя" aria-label="Ваше имя" required>
+                    <input type="email" id="email" name="email" placeholder="Ваш email" aria-label="Ваш email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    <button type="submit">Подписаться</button>
+                </form>
+            </article>
+        </div>
+    </section>
+
+    <footer class="container">
+        <small><a href="#">Политика конфиденциальности</a> • <a href="#">Условия использования</a></small>
+    </footer>
+    <script>
+    document.getElementById('subscribe-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        const name = document.getElementById('firstname').value;
+        const email = document.getElementById('email').value;
+        if (name && email) {
+            alert("Спасибо, " + name + "! Вы подписаны на новости.");
+        } else {
+            alert("Пожалуйста, заполните все поля.");
+        }
+    });
+    </script>
+</body>
+</html>
